@@ -14,7 +14,7 @@ export const useFetchAddress = () => {
     // KFC: KW2BZ-43A3J-HT6FG-DY7TO-ADCT7-IMFEL
     fetchJsonp(
       "https://apis.map.qq.com/ws/place/v1/suggestion?" +
-        `keyword=${value}&key=KW2BZ-43A3J-HT6FG-DY7TO-ADCT7-IMFEL&output=jsonp`
+        `keyword=${value}&key=LP6BZ-KOCKH-WDADQ-WRB44-ZULEQ-YYFFK&output=jsonp`
     )
       .then(function (response) {
         return response.json();

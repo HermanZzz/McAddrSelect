@@ -118,7 +118,7 @@ function App() {
 
   const renderSearchAddr = () => {
     return (
-      <div style={{ minHeight: "350px" }}>
+      <div style={{ height: "40vh" }}>
         <SearchBar
           placeholder="请输入城市全称 路名/小区/写字楼/学校等"
           showCancelButton
@@ -141,7 +141,7 @@ function App() {
                 </List.Item>
               ))
             ) : (
-              <div style={{ margin: "150px 0" }}>
+              <div style={{ margin: "50px 0" }}>
                 <ErrorBlock status="empty" title="请先输入地点关键字" description="" />
               </div>
             )}
@@ -163,7 +163,7 @@ function App() {
               setStore(storeList[+values[0]]);
             }
           }}
-          style={{ minHeight: "400px" }}
+          style={{ height: "40vh" }}
         >
           {storeList?.map((item: any, index: number) => (
             <CheckList.Item value={index}>
@@ -195,7 +195,7 @@ function App() {
       <Form
         name="form"
         onFinish={onCopyClick}
-        style={{ minHeight: "400px" }}
+        style={{ minHeight: "40vh" }}
         initialValues={{ address: `${addr?.address} - ${addr?.title}`, store: store?.name }}
         footer={
           !copyText ? (
